@@ -1,0 +1,352 @@
+@import url(font-awesome.min.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+
+/*
+	Based on Stellar by HTML5 UP @ajlkn
+	Author @joonas-yoon
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+section {
+    font-family: 'Nanum Barun Gothic', NanumBarunGothic, 'Nanum Gothic', MalgunGothic, sans-serif;
+}
+
+h1.heading {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.display-block {
+    display: block !important;
+}
+
+a.disabled {
+    text-decoration: none;
+    cursor: default;
+}
+a.disabled, a:hover.disabled {
+    color: rgba(0, 0, 0, .25);
+}
+
+.bg-dark a[href] {
+    color: inherit;
+}
+.bg-dark a.disabled {
+    text-decoration: none;
+    cursor: default;
+}
+.bg-dark a.disabled, .bg-dark a:hover.disabled {
+    color: #5a6066;
+}
+.bg-dark .text-muted {
+    color: #949ba0 !important;
+}
+
+    @media (max-width: 576px) {
+        section {
+            font-size: 90%;
+        }
+
+        h1.heading {
+            font-size: 2rem;
+        }
+    }
+
+.main-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #403075;
+    background-image: url(images/overlay.png), -moz-linear-gradient(45deg, #403075 15%, #403075 85%);
+    background-image: url(images/overlay.png), -webkit-linear-gradient(45deg, #403075 15%, #403075 85%);
+    background-image: url(images/overlay.png), -ms-linear-gradient(45deg, #403075 15%, #403075 85%);
+    background-image: url(images/overlay.png), linear-gradient(45deg, #403075 15%, #403075 85%);
+    line-height: 1.75;
+}
+
+    .main-cover .heading-text {
+        font-size: 4.5rem;
+    }
+
+    .main-cover .short-text {
+        font-size: 1.75rem;
+    }
+
+    .main-cover .action {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding-bottom: .5em;
+        font-size: 2em;
+        animation: custom-animation 2s;
+        animation-iteration-count: infinite;
+    }
+
+	@media screen and (max-width: 768px) {
+        .main-cover .heading-text {
+            font-size: 2.5rem;
+        }
+
+        .main-cover .short-text {
+            font-size: 1.25rem;
+        }
+    }
+
+/* Utils */
+
+.small-divider {
+    width: 64px;
+    height: 1px;
+    border-bottom: 2px solid #ccc;
+    margin: 0em auto 2em auto;
+}
+
+/* Icon */
+
+.icon {
+    text-decoration: none;
+    -moz-transition: background-color 0.2s ease-in-out-out, color 0.2s ease-in-out-out;
+    -webkit-transition: background-color 0.2s ease-in-out-out, color 0.2s ease-in-out-out;
+    -ms-transition: background-color 0.2s ease-in-out-out, color 0.2s ease-in-out-out;
+    transition: background-color 0.2s ease-in-out-out, color 0.2s ease-in-out-out;
+    border-bottom: none;
+    position: relative;
+}
+
+    .icon:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+    }
+
+    .icon > .label {
+        display: none;
+    }
+
+    .icons > a[href] {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .icon.alt {
+        display: inline-block;
+        border: solid 1px rgba(255, 255, 255, 0.35);
+        border-radius: 100%;
+        color: rgba(255, 255, 255, 0.35);
+    }
+    .icon.alt:before {
+        display: block;
+        font-size: 1.25em;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        line-height: 2em;
+    }
+    .icon.alt:hover {
+        background-color: rgba(255, 255, 255, 0.075);
+        border-color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+/* Timeline */
+
+.timeline {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+    .timeline:before {
+        background-color: #cccccc;
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 2px;
+        height: 100%;
+    }
+
+    .timeline-event {
+        position: relative;
+    }
+
+    .timeline-event:hover .timeline-event-icon {
+        -moz-transform: rotate(-225deg);
+        -ms-transform: rotate(-225deg);
+        -webkit-transform: rotate(-225deg);
+        transform: rotate(-225deg);
+        background-color: #e8e45e;
+    }
+
+    .timeline-event-copy {
+        padding: 0.75em 2em;
+        position: relative;
+        top: -0.625em;
+        left: 4em;
+        width: 100%;
+    }
+
+    .timeline-event-copy h3 {
+        font-size: 1.5em;
+    }
+    .timeline-event-copy h4 {
+        font-size: 1.2em;
+        font-weight: normal;
+        margin-bottom: 1.2em;
+    }
+    .timeline-event-copy strong {
+        font-weight: 700;
+    }
+    .timeline-event-copy p:not(.timeline-event-thumbnail) {
+        padding-bottom: 0.5em;
+    }
+
+    .timeline-event-icon {
+        -moz-transition: -moz-transform 0.2s ease-in-out;
+        -o-transition: -o-transform 0.2s ease-in-out;
+        -webkit-transition: -webkit-transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #aaaaaa;
+        outline: 10px solid #f8f9fa;
+        display: block;
+        margin: 0.5em 0.5em 0.5em -0.5em;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 1em;
+        height: 1em;
+        transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    }
+
+    /* right align */
+
+    .timeline.right:before {
+        margin-left: auto;
+        margin-right: -1px;
+        left: auto;
+        right: 3em;
+    }
+
+        .dark .timeline:before {
+            background-color: #666666;
+        }
+    
+    .timeline.right .timeline-event-copy {
+        left: auto;
+        right: 4em;
+    }
+
+    .timeline.right .timeline-event-icon {
+        left: auto;
+        right: 2em;
+    }
+
+    .bg-dark .timeline-event-icon {
+        outline-color: #343a40;
+    }
+
+    .bg-dark .timeline-event:hover .timeline-event-icon {
+        background-color: #e8e45e;
+    }
+
+    @media (max-width: 576px) {
+        .timeline:before {
+            left: 0.75em;
+        }
+        .timeline-event-copy {
+            left: 1em;
+        }
+        .timeline-event-icon {
+            left: 0.75em;
+        }
+        .timeline.right:before {
+            right: 1em;
+        }
+        .timeline.right .timeline-event-copy {
+            right: 1em;
+        }
+        .timeline.right .timeline-event-icon {
+            right: 0em;
+        }
+    }
+
+/* Apps */
+
+#apps .app-wrapper {
+    margin-bottom: 2em;
+}
+
+.app {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #036;
+    transition: all 0.25s ease-in-out;
+}
+    .app:hover {
+        background-color: #2a5d90;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, .2);
+        margin-top: 0.75em;
+        margin-bottom: 1.25em;
+    }
+    .app > img {
+        width: 100%;
+    }
+
+.app-wrapper .details {
+    display: block;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-wrapper .details > p {
+    margin-bottom: 5px;
+}
+
+/* Animation */
+
+@-webkit-keyframes custom-animation {
+    0%   { opacity: 0.5; transform: translateY(0%); }
+    50%  { opacity: 1.0; transform: translateY(-15%); }
+    100% { opacity: 0.5; transform: translateY(0%); }
+}
+
+@-moz-keyframes custom-animation {
+    0%   { opacity: 0.5; transform: translateY(0%); }
+    50%  { opacity: 1.0; transform: translateY(-15%); }
+    100% { opacity: 0.5; transform: translateY(0%); }
+}
+
+@-o-keyframes custom-animation {
+    0%   { opacity: 0.5; transform: translateY(0%); }
+    50%  { opacity: 1.0; transform: translateY(-15%); }
+    100% { opacity: 0.5; transform: translateY(0%); }
+}
+
+@keyframes custom-animation {
+    0%   { opacity: 0.5; transform: translateY(0%); }
+    50%  { opacity: 1.0; transform: translateY(-15%); }
+    100% { opacity: 0.5; transform: translateY(0%); }
+}
