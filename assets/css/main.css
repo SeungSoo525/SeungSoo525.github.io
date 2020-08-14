@@ -58,11 +58,11 @@ a.disabled, a:hover.disabled {
     top: 0;
     left: 0;
     color: white;
-    background-color: #403075;
-    background-image: url(images/overlay.png), -moz-linear-gradient(45deg, #403075 15%, #403075 85%);
-    background-image: url(images/overlay.png), -webkit-linear-gradient(45deg, #403075 15%, #403075 85%);
-    background-image: url(images/overlay.png), -ms-linear-gradient(45deg, #403075 15%, #403075 85%);
-    background-image: url(images/overlay.png), linear-gradient(45deg, #403075 15%, #403075 85%);
+    background-color: #D0B3DA;
+    background-image: url(images/overlay.png), -moz-linear-gradient(45deg, #D0B3DA 15%, #D0B3DA 85%);
+    background-image: url(images/overlay.png), -webkit-linear-gradient(45deg, #D0B3DA 15%, #D0B3DA 85%);
+    background-image: url(images/overlay.png), -ms-linear-gradient(45deg, #D0B3DA 15%, #D0B3DA 85%);
+    background-image: url(images/overlay.png), linear-gradient(45deg, #D0B3DA 15%, #D0B3DA 85%);
     line-height: 1.75;
 }
 
